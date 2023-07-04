@@ -1,0 +1,401 @@
+/* Estilos Gerais */
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+h3{
+font-size: 18px;
+line-height: 30px;
+font-weight: bold;
+letter-spacing: .1em;
+color: #000;
+text-transform: uppercase;
+text-align: left;
+/* margin-bottom: 5px; */
+margin-top: 55px;
+}
+
+img {
+display: block;
+}
+
+/*Titulo e paragrafos do formulário*/
+
+.contato {
+padding: 60px 0;
+}
+
+.subtitulo {
+font-size: 24px;
+line-height: 30px;
+font-weight: bold;
+letter-spacing: .1em;
+color: #000;
+text-transform: uppercase;
+text-align: left;
+margin-bottom: 15px;
+}
+
+.subtitulo:after {
+content: "";
+display: block;
+width: 60px;
+height: 5px;
+background: #458EC0;
+margin: 8px 0;
+  text-align: left;
+}
+
+.p-form{
+  padding-bottom: 25px;
+}
+
+/* Formulário */
+
+.contato-form {
+padding-right: 60px;
+}
+
+.contato-form label{
+display: block;
+font-family: Georgia, "Times New Roman", serif;
+font-size: 15px;
+line-height: 25px;
+margin-bottom: 4px;
+}
+
+.contato-form input {
+display: block;
+width: 100%;
+border: 2px solid #323C42;
+background: none;
+padding: 7px 10px;
+margin-bottom: 10px;
+outline: none;
+font-size: 14px;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.contato-form textarea {
+display: block;
+width: 100%;
+height: 120px;
+border: 2px solid #323C42;
+background: none;
+padding: 7px 10px;
+margin-bottom: 20px;
+outline: none;
+font-size: 14px;
+font-family: Georgia, "Times New Roman", serif;
+}
+
+.contato-form button {
+padding: 7px 40px;
+background: none;
+}
+
+
+/* Horário dos cultos */
+
+.cultos{
+  padding: 10px 0;
+}
+
+.contato_dados h3{
+font-size: 18px;
+line-height: 25px;
+text-transform: uppercase;
+font-weight: bold;
+}
+
+/* Redes Sociais */
+
+.contato_dados ul {
+margin-top: 10px;
+}
+
+.contato_dados ul li {
+display: inline-block;
+margin-right: 10px;
+}
+
+.contato_dados ul li a {
+border: 2px solid #323C42;
+display: block;
+padding: 10px;
+}
+
+.contato_dados ul li a:hover {
+border: 2px solid #323C42;
+  background-color: #D9E0E6;
+}
+
+.btn {
+  padding: 10px 30px;
+color: #458EC0;
+  background-color: #fec63e;
+  border: 2px solid #fec63e;
+font-size: 14px;
+line-height: 20px;
+text-transform: uppercase;
+font-weight: bold;
+letter-spacing: .1em;
+}
+
+.btn:hover {
+color: #ffffff;
+  background-color: #458EC0;
+  border: 2px solid #458EC0;
+}
+
+/* Mapa */
+
+.contato_mapa{
+  padding: 40px 0;
+}
+
+
+.contato_mapa p{
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.contato_mapa img{
+  text-align: center;
+  padding-bottom: 10px;
+  margin: 0 auto;
+}
+
+
+/* Footer */
+
+.copy {
+width: 100%;
+background: #ffbcfd;
+padding: 20px 0;
+}
+
+.copy p{
+  text-align: center;
+  color:#ffffff;
+  font-size: 14px;
+font-family: Georgia, "Times New Roman", serif;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box; 
+  box-sizing: border-box;
+}
+
+.container {
+	width: 960px;
+	margin: 0 auto;
+	padding: 0px;
+	position: relative;
+}
+
+.container:after, .container:before {
+	content: " ";
+	display: table;
+}
+
+.container:after {
+	clear: both;
+}
+
+.grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12, .grid-13, .grid-14, .grid-15, .grid-16, .grid-1-3 {
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.grid-1 	{width: 40px;}
+.grid-2 	{width: 100px;}
+.grid-3 	{width: 160px;}
+.grid-4 	{width: 220px;}
+.grid-5 	{width: 280px;}
+.grid-6 	{width: 340px;}
+.grid-7 	{width: 400px;}
+.grid-8 	{width: 460px;}
+.grid-9 	{width: 520px;}
+.grid-10 	{width: 580px;}
+.grid-11 	{width: 640px;}
+.grid-12 	{width: 700px;}
+.grid-13 	{width: 760px;}
+.grid-14 	{width: 820px;}
+.grid-15 	{width: 880px;}
+.grid-16 	{width: 940px;}
+.grid-1-3	{width: 300px;}
+
+@media only screen and (min-width: 788px) and (max-width: 979px) {
+
+.container {
+	width: 768px;
+}
+
+.grid-1		{width: 28px;}
+.grid-2		{width: 76px;}
+.grid-3		{width: 124px;}
+.grid-4		{width: 172px;}
+.grid-5		{width: 220px;}
+.grid-6		{width: 268px;}
+.grid-7		{width: 316px;}
+.grid-8		{width: 364px;}
+.grid-9		{width: 412px;}
+.grid-10	{width: 460px;}
+.grid-11	{width: 508px;}
+.grid-12	{width: 556px;}
+.grid-13	{width: 604px;}
+.grid-14	{width: 652px;}
+.grid-15	{width: 700px;}
+.grid-16	{width: 748px;}
+.grid-1-3	{width: 236px;}
+
+}
+
+@media only screen and (max-width: 787px) {
+.container {
+	width: 300px;
+}
+
+.grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12, .grid-13, .grid-14, .grid-15, .grid-16, .grid-1-3 {
+	width: 300px;
+	margin: 0 0 20px 0;
+	float: none;
+}
+
+}
+
+/* ==========================================================================
+   Reset
+   ========================================================================== */
+
+/**
+ * Remove anchor text-decoration
+ */ 
+
+ a {
+	text-decoration: none;
+}
+
+/**
+ * Remove list-style
+ */ 
+
+ol, ul {
+	list-style: none;
+}
+
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, a, em, img, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, article, footer, header, nav, section, main {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, ul {
+	font-size: 1em;
+	font-weight: normal;
+}
+
+/*Estilo para tablets*/
+/* @media only screen and (min-width: 788px) and (max-width: 979px){
+
+
+
+    
+
+}Final do estilo para tablets */
+
+
+
+
+/*Estilo para smartphone*/
+@media only screen and (max-width: 787px) {
+
+  /* Banner */
+  
+  .banner{
+      width: 100%;
+      height: 169px;
+      background: url("../img/bg-mobile.png") no-repeat center;
+      background-size: cover;
+      padding-top: 60px;
+      text-align: center;
+  }
+  
+  .banner h1 img{
+      max-width: 310px;
+      margin: 0 auto;
+         
+  }
+  
+  /* Formulário */
+  
+  .contato-form input {
+    width: 120%;
+  }
+  
+  .contato-form textarea {
+    width: 120%;
+  }
+  
+  .contato-form button {
+    /* background: none; */
+      padding: 0 auto;
+  }
+  
+  /* Redes Sociais */
+  
+  .contato{
+      padding-bottom: 10px;
+  }
+  
+  
+  /* Mapa */
+  
+  .contato_mapa{
+      padding: 10px 0;
+  }
+  
+  .contato_mapa .icone-maps{
+      height: 90px;
+  }
+  
+  .contato_mapa p{
+      text-align: center;
+      padding-bottom: 10px;
+  }
+  
+  .contato_mapa img{
+      width: 300px;
+      padding-bottom: 30px;
+      margin: 0 auto;
+  }
+  
+  /* Footer */
+  
+  .copy {
+    width: 100%;
+    background: red;
+    padding: 20px 0;
+  }
+  
+  .copy p{
+      text-align: center;
+      color:#ffffff;
+      font-size: 14px;
+    font-family: Georgia, "Times New Roman", serif;
+  }
+  
+  
+  
+  }/* Final do estilo para smartphone */
