@@ -1,8 +1,80 @@
 /* Estilos Gerais */
-
-body{
-  font-family: Arial, Helvetica, sans-serif;
+body  {
+  padding-top: 80px;
+  background-image: url(banner.png);
+  background-repeat: no-repeat;
 }
+.navbar {
+  padding: 10px;
+  width: 100%;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 70px;
+  box-sizing: border-box;
+  transition: .3s;
+  }
+  .navbar.black {
+  background-color: pink !important;
+  height: 60px;
+  padding: 10px 50px;
+  }
+  
+  .navbar .logo {
+  float: left;
+  }
+  
+  .navbar .logo img {
+  height: 110px;
+  transition: .5s;
+  margin-left: 20%;
+  }
+  
+  .navbar .carrinho {
+    float: left;
+    }
+    
+    .navbar .carrinho img {
+    height: 30px;
+    transition: .5s;
+    margin-left: 1000%;
+    }
+  
+  .navbar.black .logo img {
+  height: 60px;
+  }
+  
+  .navbar ul {
+  list-style: none;
+  width: auto;
+  margin: 0 auto;
+  }
+  
+  .navbar ul li {
+  list-style: none;
+  }
+  
+  .navbar ul li a {
+  line-height: 20px;
+  color: pink;
+  padding: 5px 30px;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: .5s;
+  margin: 0 15px;
+  }
+  
+  .navbar.black ul li a {
+  color: #fff;
+  margin: 0 25px;
+  }
+  
+  .navbar ul li a.active, .navbar ul li a:hover {
+  color: #fff;
+  background: rgb(245, 31, 149);
+  }
 
 p{
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -26,7 +98,10 @@ img {
 display: block;
 }
 
-/*Titulo e paragrafos do formulário*/
+
+.posição{
+  position: absolute;
+  top: 600px; }
 
 .contato {
 padding: 60px 0;
@@ -48,7 +123,7 @@ content: "";
 display: block;
 width: 60px;
 height: 5px;
-background: #458EC0;
+background: pink;
 margin: 8px 0;
   text-align: left;
 }
@@ -74,7 +149,7 @@ margin-bottom: 4px;
 .contato-form input {
 display: block;
 width: 100%;
-border: 2px solid #323C42;
+border: 2px solid #000000;
 background: none;
 padding: 7px 10px;
 margin-bottom: 10px;
@@ -98,13 +173,13 @@ font-family: Georgia, "Times New Roman", serif;
 
 .contato-form button {
 padding: 7px 40px;
-background: none;
+background: pink;
 }
 
 
-/* Horário dos cultos */
+/* Horario atendimento*/
 
-.cultos{
+.atendimento{
   padding: 10px 0;
 }
 
@@ -134,14 +209,14 @@ padding: 10px;
 
 .contato_dados ul li a:hover {
 border: 2px solid #323C42;
-  background-color: #D9E0E6;
+  background-color: pink;
 }
 
 .btn {
   padding: 10px 30px;
-color: #458EC0;
-  background-color: #fec63e;
-  border: 2px solid #fec63e;
+color: black;
+  background-color: black;
+  border: 2px solid black;
 font-size: 14px;
 line-height: 20px;
 text-transform: uppercase;
@@ -150,9 +225,9 @@ letter-spacing: .1em;
 }
 
 .btn:hover {
-color: #ffffff;
-  background-color: #458EC0;
-  border: 2px solid #458EC0;
+color: rgb(255, 5, 5);
+  background-color: rgb(236, 21, 21);
+  border: 2px solid rgb(235, 9, 9);
 }
 
 /* Mapa */
@@ -178,13 +253,13 @@ color: #ffffff;
 
 .copy {
 width: 100%;
-background: #ffbcfd;
 padding: 20px 0;
+background-color: pink;
 }
 
 .copy p{
   text-align: center;
-  color:#ffffff;
+  color:#000000;
   font-size: 14px;
 font-family: Georgia, "Times New Roman", serif;
 }
@@ -235,167 +310,8 @@ font-family: Georgia, "Times New Roman", serif;
 .grid-16 	{width: 940px;}
 .grid-1-3	{width: 300px;}
 
-@media only screen and (min-width: 788px) and (max-width: 979px) {
-
 .container {
 	width: 768px;
 }
 
 .grid-1		{width: 28px;}
-.grid-2		{width: 76px;}
-.grid-3		{width: 124px;}
-.grid-4		{width: 172px;}
-.grid-5		{width: 220px;}
-.grid-6		{width: 268px;}
-.grid-7		{width: 316px;}
-.grid-8		{width: 364px;}
-.grid-9		{width: 412px;}
-.grid-10	{width: 460px;}
-.grid-11	{width: 508px;}
-.grid-12	{width: 556px;}
-.grid-13	{width: 604px;}
-.grid-14	{width: 652px;}
-.grid-15	{width: 700px;}
-.grid-16	{width: 748px;}
-.grid-1-3	{width: 236px;}
-
-}
-
-@media only screen and (max-width: 787px) {
-.container {
-	width: 300px;
-}
-
-.grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12, .grid-13, .grid-14, .grid-15, .grid-16, .grid-1-3 {
-	width: 300px;
-	margin: 0 0 20px 0;
-	float: none;
-}
-
-}
-
-/* ==========================================================================
-   Reset
-   ========================================================================== */
-
-/**
- * Remove anchor text-decoration
- */ 
-
- a {
-	text-decoration: none;
-}
-
-/**
- * Remove list-style
- */ 
-
-ol, ul {
-	list-style: none;
-}
-
-html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, a, em, img, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, article, footer, header, nav, section, main {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	vertical-align: baseline;
-}
-
-h1, h2, h3, h4, h5, h6, p, a, ul {
-	font-size: 1em;
-	font-weight: normal;
-}
-
-/*Estilo para tablets*/
-/* @media only screen and (min-width: 788px) and (max-width: 979px){
-
-
-
-    
-
-}Final do estilo para tablets */
-
-
-
-
-/*Estilo para smartphone*/
-@media only screen and (max-width: 787px) {
-
-  /* Banner */
-  
-  .banner{
-      width: 100%;
-      height: 169px;
-      background: url("../img/bg-mobile.png") no-repeat center;
-      background-size: cover;
-      padding-top: 60px;
-      text-align: center;
-  }
-  
-  .banner h1 img{
-      max-width: 310px;
-      margin: 0 auto;
-         
-  }
-  
-  /* Formulário */
-  
-  .contato-form input {
-    width: 120%;
-  }
-  
-  .contato-form textarea {
-    width: 120%;
-  }
-  
-  .contato-form button {
-    /* background: none; */
-      padding: 0 auto;
-  }
-  
-  /* Redes Sociais */
-  
-  .contato{
-      padding-bottom: 10px;
-  }
-  
-  
-  /* Mapa */
-  
-  .contato_mapa{
-      padding: 10px 0;
-  }
-  
-  .contato_mapa .icone-maps{
-      height: 90px;
-  }
-  
-  .contato_mapa p{
-      text-align: center;
-      padding-bottom: 10px;
-  }
-  
-  .contato_mapa img{
-      width: 300px;
-      padding-bottom: 30px;
-      margin: 0 auto;
-  }
-  
-  /* Footer */
-  
-  .copy {
-    width: 100%;
-    background: red;
-    padding: 20px 0;
-  }
-  
-  .copy p{
-      text-align: center;
-      color:#ffffff;
-      font-size: 14px;
-    font-family: Georgia, "Times New Roman", serif;
-  }
-  
-  
-  
-  }/* Final do estilo para smartphone */
